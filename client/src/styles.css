@@ -1,0 +1,213 @@
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f3f4f8;color:#171923}button,input,select{font:inherit}button{cursor:pointer;border:0}.page{min-height:100vh;padding:28px}.home-page{max-width:1050px;margin:auto}.hero{text-align:center;padding:35px 0}.logo{font-size:25px;font-weight:900;letter-spacing:-.5px}.hero .logo{font-size:42px}.hero p{color:#6b7280;font-size:18px}.home-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:22px}.card{background:white;border-radius:22px;padding:28px;box-shadow:0 12px 40px #11182712;border:1px solid #e5e7eb}.card h2{margin-top:0}label{display:block;font-weight:700;font-size:13px;margin:16px 0 7px;color:#4b5563}input,select{width:100%;border:1px solid #d1d5db;border-radius:11px;padding:12px 13px;background:white;outline:none}input:focus,select:focus{border-color:#6366f1;box-shadow:0 0 0 3px #6366f122}.settings-grid{display:grid;grid-template-columns:1fr 1fr;gap:3px 14px}.primary,.secondary{width:100%;margin-top:22px;padding:13px 18px;border-radius:12px;font-weight:800;color:white;background:#5b5ce2}.secondary{background:#111827}.ghost{padding:9px 14px;border-radius:10px;background:#e5e7eb}.muted{color:#6b7280}.error{background:#fee2e2;color:#991b1b;padding:12px 16px;border-radius:10px;margin:18px auto;max-width:700px;text-align:center}.topbar,.game-header{display:flex;align-items:center;justify-content:space-between;max-width:1450px;margin:0 auto 22px}.lobby{max-width:850px;margin:40px auto;text-align:center}.room-share{display:flex;align-items:center;justify-content:center;gap:12px;margin:20px 0}.room-share b{font-size:28px;letter-spacing:5px;background:#f3f4f6;padding:10px 18px;border-radius:12px}.room-share button{padding:10px 14px;border-radius:10px;background:#e0e7ff}.players-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;text-align:left;margin:25px 0}.player-card{display:flex;gap:12px;align-items:center;background:#f8fafc;border:1px solid #e5e7eb;border-radius:14px;padding:13px}.avatar{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:#6366f1;color:white;font-weight:900}.player-card small{display:block;color:#16a34a;margin-top:3px}.badge{font-size:9px;background:#ede9fe;color:#6d28d9;padding:3px 5px;border-radius:5px;margin-left:5px}.lobby-settings{display:flex;justify-content:center;gap:15px;flex-wrap:wrap;color:#4b5563;margin:20px 0}.waiting{margin-top:22px;color:#6b7280}.game-page{min-height:100vh;background:#edf0f5}.game-header{background:white;max-width:none;padding:14px 20px;margin:0;box-shadow:0 2px 12px #1118270c}.round-info{font-weight:800}.timer{font-weight:900;color:#dc2626}.game-layout{max-width:1500px;margin:auto;padding:18px;display:grid;grid-template-columns:210px minmax(500px,1fr) 300px;gap:16px}.sidebar,.chat,.canvas-area{background:white;border:1px solid #e5e7eb;border-radius:16px}.sidebar,.chat{padding:16px;height:fit-content}.sidebar h3,.chat h3{margin:0 0 14px}.score-row{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid #eee}.canvas-area{padding:14px;position:relative}.word-bar{text-align:center;height:45px;display:flex;justify-content:center;align-items:center;gap:8px;font-size:18px}.hint{letter-spacing:5px}.canvas-wrap{position:relative;border:2px solid #d1d5db;border-radius:12px;overflow:hidden;background:white}.canvas-wrap canvas{width:100%;height:auto;display:block;touch-action:none}.toolbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding-top:12px}.toolbar button{background:#f3f4f6;padding:8px 11px;border-radius:9px}.toolbar .tool-active{background:#5b5ce2;color:white;font-weight:800}.color-btn{width:27px;height:27px;border-radius:50%;border:2px solid #d1d5db!important;padding:0!important}.word-modal,.round-overlay{position:absolute;inset:0;background:#111827cc;color:white;display:grid;place-content:center;text-align:center;z-index:5}.word-options{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}.word-options button{padding:14px 22px;border-radius:12px;background:white;color:#111827;font-weight:800}.round-overlay{background:#111827cc}.messages{height:430px;overflow-y:auto;background:#f8fafc;border-radius:10px;padding:10px}.message{font-size:13px;padding:6px 2px;line-height:1.4}.message b{color:#4f46e5}.chat-input{display:flex;gap:7px;margin-top:9px}.chat-input input{min-width:0}.chat-input button{background:#5b5ce2;color:white;padding:0 13px;border-radius:10px}.gameover{display:grid;place-items:center;background:linear-gradient(135deg,#eef2ff,#f8fafc)}.result-card{width:min(500px,95vw);text-align:center}.trophy{font-size:70px}.winner-text{font-size:24px;font-weight:900}.final-list{margin:20px 0;text-align:left}.final-row{display:flex;justify-content:space-between;padding:13px;border-bottom:1px solid #eee}@media(max-width:1050px){.game-layout{grid-template-columns:170px minmax(400px,1fr)}.chat{grid-column:1/-1}.messages{height:180px}}@media(max-width:750px){.home-grid{grid-template-columns:1fr}.game-layout{grid-template-columns:1fr;padding:8px}.sidebar{order:2}.canvas-area{order:1}.chat{order:3}.game-header{padding:12px}.hero .logo{font-size:31px}.page{padding:15px}.settings-grid{grid-template-columns:1fr}.round-info{font-size:13px}}
+/* ===== UI ENHANCEMENT / ANIMATIONS ===== */
+body{
+  background:
+    radial-gradient(circle at 10% 10%, rgba(99,102,241,.12), transparent 30%),
+    radial-gradient(circle at 90% 20%, rgba(236,72,153,.10), transparent 28%),
+    #f3f4f8;
+}
+.card{
+  animation: cardIn .55s cubic-bezier(.2,.8,.2,1);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.card:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 18px 50px rgba(17,24,39,.12);
+}
+@keyframes cardIn{
+  from{opacity:0;transform:translateY(18px) scale(.98)}
+  to{opacity:1;transform:translateY(0) scale(1)}
+}
+.hero .logo{
+  animation: logoFloat 3s ease-in-out infinite;
+  text-shadow: 0 8px 28px rgba(79,70,229,.18);
+}
+@keyframes logoFloat{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-5px)}
+}
+.primary,.secondary,.room-share button,.word-options button,.toolbar button{
+  transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
+}
+.primary:hover,.secondary:hover,.room-share button:hover,.word-options button:hover,.toolbar button:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 22px rgba(79,70,229,.18);
+}
+.primary:active,.secondary:active,.word-options button:active,.toolbar button:active{
+  transform:scale(.97);
+}
+.player-card{
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+.player-card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 10px 25px rgba(17,24,39,.08);
+}
+.avatar{
+  box-shadow:0 6px 18px rgba(99,102,241,.28);
+}
+.game-page{
+  background:
+    radial-gradient(circle at 20% 0%, rgba(99,102,241,.10), transparent 25%),
+    radial-gradient(circle at 80% 10%, rgba(16,185,129,.08), transparent 25%),
+    #edf0f5;
+}
+.game-header{
+  backdrop-filter:blur(12px);
+}
+.timer{
+  min-width:78px;
+  text-align:center;
+  padding:8px 12px;
+  border-radius:12px;
+  background:#fff1f2;
+  animation:timerPulse 1s ease-in-out infinite;
+}
+@keyframes timerPulse{
+  0%,100%{transform:scale(1)}
+  50%{transform:scale(1.04)}
+}
+.canvas-wrap{
+  box-shadow:inset 0 0 0 1px rgba(99,102,241,.04), 0 12px 35px rgba(17,24,39,.08);
+}
+.word-modal{
+  animation:fadeIn .2s ease;
+  backdrop-filter:blur(8px);
+}
+.word-options button{
+  animation:wordPop .45s cubic-bezier(.2,.8,.2,1) both;
+}
+.word-options button:nth-child(2){animation-delay:.06s}
+.word-options button:nth-child(3){animation-delay:.12s}
+.word-options button:nth-child(4){animation-delay:.18s}
+.word-options button:nth-child(5){animation-delay:.24s}
+@keyframes wordPop{
+  from{opacity:0;transform:translateY(15px) scale(.9)}
+  to{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes fadeIn{
+  from{opacity:0}to{opacity:1}
+}
+.toolbar .tool-active{
+  background:#5b5ce2;
+  color:white;
+  box-shadow:0 6px 18px rgba(91,92,226,.25);
+}
+.messages .message{
+  animation:messageIn .25s ease both;
+}
+@keyframes messageIn{
+  from{opacity:0;transform:translateX(8px)}
+  to{opacity:1;transform:translateX(0)}
+}
+
+/* Round winner alert */
+.round-winner-backdrop{
+  position:fixed;
+  inset:0;
+  z-index:100;
+  display:grid;
+  place-items:center;
+  background:rgba(15,23,42,.72);
+  backdrop-filter:blur(9px);
+  overflow:hidden;
+  animation:fadeIn .22s ease;
+}
+.round-winner-card{
+  position:relative;
+  width:min(480px,92vw);
+  padding:38px 30px 30px;
+  border:1px solid rgba(255,255,255,.45);
+  border-radius:28px;
+  background:linear-gradient(145deg,rgba(255,255,255,.98),rgba(245,247,255,.96));
+  text-align:center;
+  box-shadow:0 30px 100px rgba(0,0,0,.35);
+  animation:winnerIn .55s cubic-bezier(.16,1,.3,1);
+}
+@keyframes winnerIn{
+  from{opacity:0;transform:translateY(40px) scale(.75) rotate(-2deg)}
+  to{opacity:1;transform:translateY(0) scale(1) rotate(0)}
+}
+.winner-glow{
+  position:absolute;
+  width:180px;height:180px;
+  left:50%;top:-70px;
+  transform:translateX(-50%);
+  background:#8b5cf6;
+  opacity:.18;
+  filter:blur(50px);
+  border-radius:50%;
+}
+.winner-icon{
+  position:relative;
+  font-size:70px;
+  animation:trophyBounce 1.2s ease-in-out infinite;
+}
+@keyframes trophyBounce{
+  0%,100%{transform:translateY(0) rotate(-3deg)}
+  50%{transform:translateY(-9px) rotate(3deg)}
+}
+.winner-kicker{
+  margin-top:8px;
+  color:#6366f1;
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:3px;
+}
+.round-winner-card h2{
+  margin:8px 0 4px;
+  font-size:34px;
+  letter-spacing:-1px;
+}
+.round-winner-card p{
+  color:#4b5563;
+  font-size:16px;
+}
+.winner-word{
+  margin:18px auto 14px;
+  width:max-content;
+  max-width:100%;
+  padding:10px 16px;
+  border-radius:12px;
+  background:#eef2ff;
+  color:#4338ca;
+}
+.winner-score-preview{
+  display:flex;
+  justify-content:center;
+  gap:7px;
+  flex-wrap:wrap;
+  margin:16px 0;
+}
+.winner-score-preview span{
+  padding:7px 10px;
+  border-radius:9px;
+  background:#f3f4f6;
+  font-size:12px;
+  font-weight:700;
+}
+.next-round-text{
+  margin-top:20px;
+  color:#6b7280;
+  font-size:13px;
+  font-weight:700;
+}
+.confetti{
+  position:absolute;
+  color:#fbbf24;
+  font-size:30px;
+  animation:confettiFall 1.8s ease-in-out infinite;
+}
+.confetti-a{left:18%;top:18%;animation-delay:.1s}
+.confetti-b{right:18%;top:22%;animation-delay:.45s}
+.confetti-c{left:75%;bottom:18%;animation-delay:.8s}
+@keyframes confettiFall{
+  0%{opacity:0;transform:translateY(-20px) rotate(0)}
+  25%{opacity:1}
+  100%{opacity:0;transform:translateY(80px) rotate(180deg)}
+}
+@media(max-width:750px){
+  .round-winner-card{padding:30px 20px}
+  .round-winner-card h2{font-size:28px}
+  .winner-icon{font-size:58px}
+}
